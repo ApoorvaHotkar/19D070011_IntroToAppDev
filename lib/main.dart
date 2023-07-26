@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -10,9 +11,119 @@ Future<void> main() async
   await Firebase.initializeApp();
   runApp(const MaterialApp(
     title: 'Budget Tracking',
-    home: HomePage(),
+    home: LoginPage(),
   ));
 }
+
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+
+  void initState()
+  {
+    super.initState();
+  }
+
+  final TextEditingController _emailcontroller = TextEditingController();
+  final TextEditingController _passwordcontroller = TextEditingController();
+
+  final _auth = FirebaseAuth.instance;
+
+
+  Future<void> LogIn(BuildContext context)
+  async
+  {
+    try {
+
+      await _auth.signInWithEmailAndPassword(email: _emailcontroller.text, password: _passwordcontroller.text);
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => const HomePage()
+      )
+      );
+
+      _emailcontroller.text = '';
+      _passwordcontroller.text = '';
+
+    } catch (e) {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => const LoginFailure()
+      )
+      );
+
+      _emailcontroller.text = '';
+      _passwordcontroller.text = '';
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Budget Tracking Login Page',
+      home: Scaffold(
+
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text('Budget Tracking Login Page'),
+
+        ),
+
+        body: Container(
+          height: double.infinity,
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+
+            children: [
+              Text("Email", style: TextStyle(fontSize: 30, color: Colors.black)),
+              TextField(controller: _emailcontroller, decoration: InputDecoration(hintText: "Enter Email"),),
+              Text("Password", style: TextStyle(fontSize: 30, color: Colors.black)),
+              TextField(controller: _passwordcontroller, decoration: InputDecoration(hintText: "Enter Password"), keyboardType: TextInputType.number,),
+
+              ElevatedButton(onPressed: () => LogIn(context), child: Text("Log In"))
+
+
+            ],
+          ),
+        ),
+      ),
+    );
+
+  }
+}
+
+class LoginFailure extends StatefulWidget {
+  const LoginFailure({super.key});
+
+  @override
+  State<LoginFailure> createState() => _LoginFailureState();
+}
+
+class _LoginFailureState extends State<LoginFailure> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'Budget Tracking',
+        home: Scaffold(
+
+            appBar: AppBar(
+              centerTitle: true,
+              title: const Text('Login Failure'),
+              leading: IconButton(onPressed: () => _goback(context), icon: Icon(Icons.arrow_back_rounded)),
+            ),
+            body:
+            Text("Please enter correct login credentials", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red,fontSize: 30),),
+        )
+    );
+  }
+}
+
+
 
 
 class HomePage extends StatefulWidget {
@@ -51,6 +162,7 @@ class _HomePageState extends State<HomePage> {
             appBar: AppBar(
               centerTitle: true,
               title: const Text('Budget Tracking'),
+              leading: IconButton(onPressed: () => _goback(context), icon: Icon(Icons.arrow_back_rounded)),
             ),
             body:
             Container(
@@ -176,7 +288,8 @@ class _SecondPageState extends State<SecondPage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
 
                 children: [
-                  Expanded(
+                  Flexible(
+                      flex: 100,
                       child:  ListTile(
                         title: Text('Total: $total_price', style: TextStyle(fontSize: 30)),
                           trailing: IconButton
@@ -186,7 +299,8 @@ class _SecondPageState extends State<SecondPage> {
                       )
                   ),
 
-                  Expanded(
+                  Flexible(
+                      flex: 800,
                       child: StreamBuilder(
                         stream: _categories.snapshots(),
                         builder: (context, AsyncSnapshot<QuerySnapshot> streamSnapshot)
@@ -242,6 +356,7 @@ Widget first_page_first_row = Container(
     size:100,
   ),
 );
+
 
 Widget first_page_second_row = Container(
   alignment: Alignment.center,
