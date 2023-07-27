@@ -1,0 +1,175 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.budget_tracking"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
+11-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:22:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
+12-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:23:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:24:5-68
+13-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:24:22-65
+14    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+14-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
+14-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+15-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+15-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
+16
+17    <application
+18        android:name="android.app.Application"
+18-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:4:9-42
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.6.0] C:\Users\HariOm\.gradle\caches\transforms-3\9df09c476a8966dff0ab2c589910f62f\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+20        android:icon="@mipmap/ic_launcher"
+20-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:5:9-43
+21        android:label="budget_tracking" >
+21-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:3:9-40
+22        <activity
+22-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:6:9-26:20
+23            android:name="com.example.budget_tracking.MainActivity"
+23-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:7:13-41
+24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+24-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:11:13-163
+25            android:exported="true"
+25-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:8:13-36
+26            android:hardwareAccelerated="true"
+26-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:12:13-47
+27            android:launchMode="singleTop"
+27-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:9:13-43
+28            android:theme="@style/LaunchTheme"
+28-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:10:13-47
+29            android:windowSoftInputMode="adjustResize" >
+29-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:13:13-55
+30
+31            <!--
+32                 Specifies an Android theme to apply to this Activity as soon as
+33                 the Android process has started. This theme is visible to the user
+34                 while the Flutter UI initializes. After that, this theme continues
+35                 to determine the Window background behind the Flutter UI.
+36            -->
+37            <meta-data
+37-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:18:13-21:17
+38                android:name="io.flutter.embedding.android.NormalTheme"
+38-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:19:15-70
+39                android:resource="@style/NormalTheme" />
+39-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:20:15-52
+40
+41            <intent-filter>
+41-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:22:13-25:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:23:17-68
+42-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:23:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:24:17-76
+44-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:24:27-74
+45            </intent-filter>
+46        </activity>
+47        <!--
+48             Don't delete the meta-data below.
+49             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+50        -->
+51        <meta-data
+51-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:29:9-31:33
+52            android:name="flutterEmbedding"
+52-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:30:13-44
+53            android:value="2" />
+53-->G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\AndroidManifest.xml:31:13-30
+54
+55        <uses-library
+55-->[androidx.window:window:1.0.0-beta04] C:\Users\HariOm\.gradle\caches\transforms-3\86a1a9f6804c8fc691a553244f0de821\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+56            android:name="androidx.window.extensions"
+56-->[androidx.window:window:1.0.0-beta04] C:\Users\HariOm\.gradle\caches\transforms-3\86a1a9f6804c8fc691a553244f0de821\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+57            android:required="false" />
+57-->[androidx.window:window:1.0.0-beta04] C:\Users\HariOm\.gradle\caches\transforms-3\86a1a9f6804c8fc691a553244f0de821\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+58        <uses-library
+58-->[androidx.window:window:1.0.0-beta04] C:\Users\HariOm\.gradle\caches\transforms-3\86a1a9f6804c8fc691a553244f0de821\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+59            android:name="androidx.window.sidecar"
+59-->[androidx.window:window:1.0.0-beta04] C:\Users\HariOm\.gradle\caches\transforms-3\86a1a9f6804c8fc691a553244f0de821\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+60            android:required="false" />
+60-->[androidx.window:window:1.0.0-beta04] C:\Users\HariOm\.gradle\caches\transforms-3\86a1a9f6804c8fc691a553244f0de821\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+61
+62        <service
+62-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:28:9-34:19
+63            android:name="com.google.firebase.components.ComponentDiscoveryService"
+63-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:29:13-84
+64            android:directBootAware="true"
+64-->[com.google.firebase:firebase-common:20.3.3] C:\Users\HariOm\.gradle\caches\transforms-3\7b0bedee7051420cb6e57373566adbb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+65            android:exported="false" >
+65-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:30:13-37
+66            <meta-data
+66-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
+67                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+67-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\aa519e478becdf34a2bf2feaa7125a05\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
+69            <meta-data
+69-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\HariOm\.gradle\caches\transforms-3\b23bba20aa980794a8ba05151e811cfa\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+70                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+70-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\HariOm\.gradle\caches\transforms-3\b23bba20aa980794a8ba05151e811cfa\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\HariOm\.gradle\caches\transforms-3\b23bba20aa980794a8ba05151e811cfa\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+72        </service>
+73
+74        <provider
+74-->[com.google.firebase:firebase-common:20.3.3] C:\Users\HariOm\.gradle\caches\transforms-3\7b0bedee7051420cb6e57373566adbb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+75            android:name="com.google.firebase.provider.FirebaseInitProvider"
+75-->[com.google.firebase:firebase-common:20.3.3] C:\Users\HariOm\.gradle\caches\transforms-3\7b0bedee7051420cb6e57373566adbb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+76            android:authorities="com.example.budget_tracking.firebaseinitprovider"
+76-->[com.google.firebase:firebase-common:20.3.3] C:\Users\HariOm\.gradle\caches\transforms-3\7b0bedee7051420cb6e57373566adbb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+77            android:directBootAware="true"
+77-->[com.google.firebase:firebase-common:20.3.3] C:\Users\HariOm\.gradle\caches\transforms-3\7b0bedee7051420cb6e57373566adbb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+78            android:exported="false"
+78-->[com.google.firebase:firebase-common:20.3.3] C:\Users\HariOm\.gradle\caches\transforms-3\7b0bedee7051420cb6e57373566adbb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+79            android:initOrder="100" />
+79-->[com.google.firebase:firebase-common:20.3.3] C:\Users\HariOm\.gradle\caches\transforms-3\7b0bedee7051420cb6e57373566adbb4\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+80
+81        <receiver
+81-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
+82            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+82-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
+83            android:enabled="true"
+83-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
+84            android:exported="false" >
+84-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
+85        </receiver>
+86
+87        <service
+87-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
+88            android:name="com.google.android.gms.measurement.AppMeasurementService"
+88-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
+89            android:enabled="true"
+89-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
+90            android:exported="false" />
+90-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
+91        <service
+91-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
+92            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+92-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
+93            android:enabled="true"
+93-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
+94            android:exported="false"
+94-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
+95            android:permission="android.permission.BIND_JOB_SERVICE" />
+95-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\HariOm\.gradle\caches\transforms-3\5d36358b3536b6727a287a1643e868cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
+96
+97        <meta-data
+97-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\HariOm\.gradle\caches\transforms-3\006bbe5a907188cb8f989af846bf78a4\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+98            android:name="com.google.android.gms.version"
+98-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\HariOm\.gradle\caches\transforms-3\006bbe5a907188cb8f989af846bf78a4\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+99            android:value="@integer/google_play_services_version" />
+99-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\HariOm\.gradle\caches\transforms-3\006bbe5a907188cb8f989af846bf78a4\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+100    </application>
+101
+102</manifest>

@@ -1,0 +1,15 @@
+com.example.budget_tracking.app-jetified-play-services-basement-18.1.0-0 C:\Users\HariOm\.gradle\caches\transforms-3\006bbe5a907188cb8f989af846bf78a4\transformed\jetified-play-services-basement-18.1.0\res
+com.example.budget_tracking.app-jetified-window-java-1.0.0-beta04-1 C:\Users\HariOm\.gradle\caches\transforms-3\5a5a752a30ef8f927b89ee5d02868eb5\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.budget_tracking.app-jetified-firebase-common-20.3.3-2 C:\Users\HariOm\.gradle\caches\transforms-3\7b0bedee7051420cb6e57373566adbb4\transformed\jetified-firebase-common-20.3.3\res
+com.example.budget_tracking.app-jetified-window-1.0.0-beta04-3 C:\Users\HariOm\.gradle\caches\transforms-3\86a1a9f6804c8fc691a553244f0de821\transformed\jetified-window-1.0.0-beta04\res
+com.example.budget_tracking.app-jetified-annotation-experimental-1.1.0-4 C:\Users\HariOm\.gradle\caches\transforms-3\9199ba66b232e9fc78c08871acc9a68c\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.budget_tracking.app-core-1.6.0-5 C:\Users\HariOm\.gradle\caches\transforms-3\9df09c476a8966dff0ab2c589910f62f\transformed\core-1.6.0\res
+com.example.budget_tracking.app-main-6 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\main\res
+com.example.budget_tracking.app-release-7 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\android\app\src\release\res
+com.example.budget_tracking.app-google-services-8 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\build\app\generated\res\google-services\release
+com.example.budget_tracking.app-pngs-9 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\build\app\generated\res\pngs\release
+com.example.budget_tracking.app-resValues-10 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\build\app\generated\res\resValues\release
+com.example.budget_tracking.app-rs-11 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\build\app\generated\res\rs\release
+com.example.budget_tracking.app-mergeReleaseResources-12 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\build\app\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.budget_tracking.app-mergeReleaseResources-13 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\build\app\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.budget_tracking.app-merged_res-14 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_2\build\app\intermediates\merged_res\release
