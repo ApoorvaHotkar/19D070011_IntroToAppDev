@@ -5,6 +5,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 double total_price = 0;
+
+final TextEditingController _targetcontrol = TextEditingController();
 Future<void> main() async
 {
   WidgetsFlutterBinding.ensureInitialized();
@@ -172,7 +174,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
 
-                children: [first_page_first_row, first_page_second_row, first_page_third_row(context)],
+                children: [first_page_first_row, first_page_second_row, first_page_third_row(context), first_page_fourth_row(context)],
               ),
             )
         )
@@ -180,6 +182,56 @@ class _HomePageState extends State<HomePage> {
 
   }
 }
+
+class GoalsPage extends StatefulWidget {
+  const GoalsPage({super.key});
+
+  @override
+  State<GoalsPage> createState() => _GoalsPageState();
+}
+
+class _GoalsPageState extends State<GoalsPage> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'Budget Tracking',
+        home: Scaffold(
+          appBar: AppBar(
+            centerTitle: true,
+            title: const Text('Goals Page'),
+            leading: IconButton(onPressed: () => _goback(context), icon: Icon(Icons.arrow_back_rounded)),
+          ),
+          body:
+          Container(
+              height: double.infinity,
+              width: double.infinity,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+
+                children: [goals_page_first_row, goals_page_second_row,
+                Container(
+                alignment: Alignment.center,
+                width: double.infinity,
+                height: 50,
+                child: ElevatedButton(onPressed: () => _checkgoals(context), child: Text("Check your Goal!"),)
+                ),
+                Container(
+                alignment: Alignment.center,
+                width: double.infinity,
+                height: 50,
+                child: ElevatedButton(onPressed: () => _logout(context), child: Text("Logout"),)
+                )
+                ]
+
+
+        )
+    )
+        )
+    );
+  }
+}
+
 
 class SecondPage extends StatefulWidget {
   const SecondPage({super.key});
@@ -255,8 +307,6 @@ class _SecondPageState extends State<SecondPage> {
                 )
               ],
             )
-
-
           );
         }
 
@@ -312,15 +362,19 @@ class _SecondPageState extends State<SecondPage> {
                             itemBuilder: (context,index)
                             {
                               final DocumentSnapshot documentSnapshot = streamSnapshot.data!.docs[index];
-                              return Card(
+
+                              return Dismissible(
+                                key: UniqueKey(),
+
                                 child: ListTile(
-                                title: Text(documentSnapshot['Category'] + ":  " + documentSnapshot['Price'].toString(),style: TextStyle(fontSize: 25,color: Colors.red, fontWeight: FontWeight.bold)),
-                                trailing: IconButton(
-                                  icon: Icon(Icons.delete),
-                                  onPressed:() => delete_category(documentSnapshot.id),
-                                      ),
-                                      ),
-                                  );
+                                  title: Text(documentSnapshot['Category'] + ":  " + documentSnapshot['Price'].toString(),style: TextStyle(fontSize: 25,color: Colors.red, fontWeight: FontWeight.bold)),
+                                ),
+                                onDismissed: (DismissDirection direction) {
+                                  setState(() {
+                                    delete_category(documentSnapshot.id);
+                                  });
+                                },
+                              );
                               },
                             );
                           }
@@ -378,6 +432,39 @@ Widget first_page_third_row(BuildContext context) {
   );
 }
 
+Widget first_page_fourth_row(BuildContext context) {
+  return ElevatedButton(onPressed:() => _gotogoalspage(context), child: Text("Goals"));
+}
+
+Widget goals_page_first_row = Container(
+  alignment: Alignment.center,
+  width: double.infinity,
+  height: 50,
+  child: Text("Enter your target savings",
+    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),
+  ),
+);
+
+Widget goals_page_second_row = Container(
+  alignment: Alignment.center,
+  width: double.infinity,
+  height: 50,
+  child: TextField(
+    controller: _targetcontrol,
+    keyboardType: TextInputType.number,
+    decoration: InputDecoration(hintText: "Enter yor target savings")
+  ),
+);
+
+
+void _gotogoalspage(BuildContext context)
+{
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => const GoalsPage()
+  )
+  );
+}
+
 void _gotosecondpage(BuildContext context)
 {
   Navigator.push(
@@ -389,4 +476,58 @@ void _gotosecondpage(BuildContext context)
 void _goback(BuildContext context)
 {
   Navigator.pop(context);
+}
+
+void _logout(BuildContext context)
+{
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => const LoginPage()
+  )
+  );
+}
+
+Future<void> _dialogBuilder_totalless(BuildContext context, double goal_price) {
+
+  double diff_tot = (total_price - goal_price).abs();
+  return showDialog<void>(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: const Text('How far you are from your goal?'),
+        content:  Text(
+          'You are Rs. $diff_tot away from your goal!!',
+          style: TextStyle(color: Colors.red, fontSize: 20),
+        ),
+      );
+    },
+  );
+}
+
+Future<void> _dialogBuilder_totalsatisfied(BuildContext context) {
+
+  return showDialog<void>(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: const Text('How far you are from your goal?'),
+        content: const Text(
+          'Congrats!! You have reached your target savings!!!',
+          style: TextStyle(color: Colors.green, fontSize: 20),
+        ),
+      );
+    },
+  );
+}
+
+void _checkgoals(BuildContext context)
+{
+  if(double.parse(_targetcontrol.text) > total_price)
+    {
+      _dialogBuilder_totalless(context, double.parse(_targetcontrol.text));
+    }
+
+  else
+    {
+      _dialogBuilder_totalsatisfied(context);
+    }
 }
