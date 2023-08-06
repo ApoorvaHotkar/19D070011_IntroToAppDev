@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">130370890375-k8h9sif2fetj2vqqd4cd8js05vgg12do.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">130370890375</string>
+    <string name="google_api_key" translatable="false">AIzaSyAND0zyEnh7_sOYJjZ_6UHw4_0zZZcdN_k</string>
+    <string name="google_app_id" translatable="false">1:130370890375:android:b7ed22083ab3f581d52622</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAND0zyEnh7_sOYJjZ_6UHw4_0zZZcdN_k</string>
+    <string name="google_storage_bucket" translatable="false">budget-tracking-a7f81.appspot.com</string>
+    <string name="project_id" translatable="false">budget-tracking-a7f81</string>
+</resources>

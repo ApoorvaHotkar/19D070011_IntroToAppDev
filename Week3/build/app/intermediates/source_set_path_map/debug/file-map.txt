@@ -1,0 +1,21 @@
+com.example.budget_tracking.app-jetified-play-services-basement-18.1.0-0 C:\Users\HariOm\.gradle\caches\transforms-3\006bbe5a907188cb8f989af846bf78a4\transformed\jetified-play-services-basement-18.1.0\res
+com.example.budget_tracking.app-browser-1.4.0-1 C:\Users\HariOm\.gradle\caches\transforms-3\15eddd45100fa512963e6542464ed3b9\transformed\browser-1.4.0\res
+com.example.budget_tracking.app-jetified-window-java-1.0.0-beta04-2 C:\Users\HariOm\.gradle\caches\transforms-3\5a5a752a30ef8f927b89ee5d02868eb5\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.budget_tracking.app-jetified-firebase-common-20.3.3-3 C:\Users\HariOm\.gradle\caches\transforms-3\7b0bedee7051420cb6e57373566adbb4\transformed\jetified-firebase-common-20.3.3\res
+com.example.budget_tracking.app-jetified-window-1.0.0-beta04-4 C:\Users\HariOm\.gradle\caches\transforms-3\86a1a9f6804c8fc691a553244f0de821\transformed\jetified-window-1.0.0-beta04\res
+com.example.budget_tracking.app-jetified-annotation-experimental-1.1.0-5 C:\Users\HariOm\.gradle\caches\transforms-3\9199ba66b232e9fc78c08871acc9a68c\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.budget_tracking.app-core-1.6.0-6 C:\Users\HariOm\.gradle\caches\transforms-3\9df09c476a8966dff0ab2c589910f62f\transformed\core-1.6.0\res
+com.example.budget_tracking.app-jetified-play-services-base-18.1.0-7 C:\Users\HariOm\.gradle\caches\transforms-3\da1dfe8119b083456108cce9257fb942\transformed\jetified-play-services-base-18.1.0\res
+com.example.budget_tracking.app-debug-8 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\android\app\src\debug\res
+com.example.budget_tracking.app-main-9 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\android\app\src\main\res
+com.example.budget_tracking.app-google-services-10 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\app\generated\res\google-services\debug
+com.example.budget_tracking.app-pngs-11 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\app\generated\res\pngs\debug
+com.example.budget_tracking.app-resValues-12 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\app\generated\res\resValues\debug
+com.example.budget_tracking.app-rs-13 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\app\generated\res\rs\debug
+com.example.budget_tracking.app-mergeDebugResources-14 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.budget_tracking.app-mergeDebugResources-15 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.budget_tracking.app-merged_res-16 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\app\intermediates\merged_res\debug
+com.example.budget_tracking.app-packaged_res-17 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\cloud_firestore\intermediates\packaged_res\debug
+com.example.budget_tracking.app-packaged_res-18 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\firebase_auth\intermediates\packaged_res\debug
+com.example.budget_tracking.app-packaged_res-19 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\firebase_core\intermediates\packaged_res\debug
+com.example.budget_tracking.app-packaged_res-20 G:\EXTRA_LEARNING\Extra_Learning\App Development Learners space\Week_3\build\firebase_database\intermediates\packaged_res\debug
