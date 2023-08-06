@@ -3,10 +3,12 @@
 A simple budget Tracking App
 
 ## Week3
+Go to Week3 Folder for Week3 assignment with only login page
 Added Login Page to Budget Tracking App
 
-## Week4
 
+## Week4
+Go to Week4 Folder for Week4 assignment with 3 features added
 ## Three New Features added
 
 **Feature 1** 
