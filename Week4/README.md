@@ -1,16 +1,12 @@
-# budget_tracking
+## Week4
 
-A new Flutter project.
+## Three New Features added
 
-## Getting Started
+**Feature 1** 
+* Slider Delete Button: You can now just slide the item in horizontal direction to delete it from database 
 
-This project is a starting point for a Flutter application.
+**Feature 2** 
+* Added a new goals section. Upon pressing the goals button on the home page, you will be directed to a new page. Here you have to enter what is your savings target. Then upon pressing "Check your goal!" button, depending upon the current total savings, you will get a pop up message. If your savings are greater than the goal you have entered, then a message saying "You have reached your target" will be shown. If you have not yet reached your goal, the pop up message will display how much more you need to save to reach your goal.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Feature 3**
+* Added logout button to goals section, so that you can logout directly after checking your goals.
